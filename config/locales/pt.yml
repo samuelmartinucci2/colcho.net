@@ -241,10 +241,14 @@ pt:
 
   links:
     back: Voltar
+    show: Exibir
 
   layout:
     rooms: Quarto
     signup: Cadastro
+    signin: Login
+    my_profile: Perfil
+    signout: Logout
 
   signup:
     confirm_email:
@@ -283,7 +287,34 @@ pt:
     submit:
       user_session:
         create: 'Entrar'
+      room:
+        create: 'Cadastrar'
+        update: 'Atualizar'
+        delete: 'Excluir'
+        show: 'Exibir'
 
   flash:
+    alert:
+      needs_login: Você precisa estar logado para continuar
     notice:
       signed_in: Login efetuado com sucesso
+      signed_out: Logout efetuado com sucesso
+      already_logged_in: Você já está logado.
+      room_created: Quarto criado com sucesso!
+      room_update: Quarto atualizado com sucesso!
+      room_deleted: Quarto excluído com sucesso!
+
+  dialogs:
+    destroy: 'Você tem certeza que deseja excluir o registro?'
+
+  rooms:
+    index:
+      title: 'Quartos disponíveis'
+    new:
+      title: 'Criar Quarto'
+    edit:
+      title: 'Atualizar Quarto'
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remover'
